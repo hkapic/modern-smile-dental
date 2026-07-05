@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============ SEO / SWAP THESE FOR THE REAL CLIENT ============ -->
+<title>Modern Smile Dental | Family &amp; Cosmetic Dentist in Tampa, FL</title>
+<meta name="description" content="Modern Smile Dental is a family and cosmetic dental practice in Tampa, FL. Gentle care, same-day emergencies, Invisalign, implants, and financing. Book your visit today." />
+<meta name="keywords" content="dentist Tampa, family dentist, cosmetic dentist, emergency dentist, Invisalign, dental implants, teeth whitening, Tampa FL dental" />
+<link rel="canonical" href="https://modernsmiledental.example.com/" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#103B36" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Modern Smile Dental" />
+<meta property="og:title" content="Modern Smile Dental | Family &amp; Cosmetic Dentist in Tampa, FL" />
+<meta property="og:description" content="Gentle family and cosmetic dentistry in Tampa. Same-day emergencies, Invisalign, implants, and flexible financing." />
+<meta property="og:url" content="https://modernsmiledental.example.com/" />
+<meta property="og:image" content="https://modernsmiledental.example.com/og-image.jpg" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Modern Smile Dental | Family &amp; Cosmetic Dentist in Tampa, FL" />
+<meta name="twitter:description" content="Gentle family and cosmetic dentistry in Tampa. Same-day emergencies, Invisalign, implants, and flexible financing." />
+<meta name="twitter:image" content="https://modernsmiledental.example.com/og-image.jpg" />
+
+<!-- Favicon (inline tooth) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23103B36' d='M16 3c-3 0-4-1.5-7-1.5C5 1.5 2 4 2 9c0 5 2 8 3.5 13C7 26 7 30 9.5 30c2.2 0 2-4 3.5-7 .8-1.6 2.2-1.6 3 0 1.5 3 1.3 7 3.5 7 2.5 0 2.5-4 4-8C25 17 27 14 27 9c0-5-3-7.5-6.9-7.5C17 1.5 19 3 16 3Z'/%3E%3C/svg%3E" />
+
+<!-- Structured data: LocalBusiness / Dentist -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Modern Smile Dental",
+  "image": "https://modernsmiledental.example.com/og-image.jpg",
+  "@id": "https://modernsmiledental.example.com/",
+  "url": "https://modernsmiledental.example.com/",
+  "telephone": "+1-813-555-0142",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4210 W Kennedy Blvd, Suite 120",
+    "addressLocality": "Tampa",
+    "addressRegion": "FL",
+    "postalCode": "33609",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 27.9450, "longitude": -82.5100 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "14:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "487" },
+  "medicalSpecialty": "Dentistry",
+  "availableService": [
+    { "@type": "MedicalProcedure", "name": "General &amp; Preventive Dentistry" },
+    { "@type": "MedicalProcedure", "name": "Cosmetic Dentistry" },
+    { "@type": "MedicalProcedure", "name": "Dental Implants" },
+    { "@type": "MedicalProcedure", "name": "Invisalign Clear Aligners" },
+    { "@type": "MedicalProcedure", "name": "Emergency Dental Care" }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================ TOKENS ============================ */
+:root{
+  --porcelain:#F3F7F4;
+  --porcelain-2:#EAF1EC;
+  --white:#FFFFFF;
+  --pine:#103B36;
+  --pine-deep:#0B2A26;
+  --teal:#1C6B62;
+  --sage:#D8E6DF;
+  --sage-line:#CBDCD3;
+  --coral:#FF6A5A;
+  --coral-deep:#E8503C;
+  --gold:#E7B24C;
+  --ink:#12211E;
+  --muted:#586b66;
+  --shadow-sm:0 1px 2px rgba(11,42,38,.06),0 4px 14px rgba(11,42,38,.05);
+  --shadow-md:0 10px 30px rgba(11,42,38,.10),0 2px 8px rgba(11,42,38,.06);
+  --shadow-lg:0 30px 70px rgba(11,42,38,.16);
+  --r-sm:12px; --r-md:20px; --r-lg:30px; --r-xl:44px;
+  --maxw:1180px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--porcelain);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em;color:var(--pine)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+section{position:relative}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{
+  font-family:'Inter';font-weight:600;font-size:.74rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--teal);display:inline-flex;align-items:center;gap:9px;
+}
+.eyebrow::before{content:"";width:26px;height:1.5px;background:var(--coral);display:inline-block}
+.muted{color:var(--muted)}
+
+/* ============================ BUTTONS ============================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-family:'Inter';font-weight:600;font-size:.98rem;
+  padding:15px 26px;border-radius:100px;cursor:pointer;border:1.5px solid transparent;
+  transition:transform .2s var(--ease),box-shadow .25s var(--ease),background .2s;
+  white-space:nowrap;
+}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn-primary{background:var(--coral);color:#fff;box-shadow:0 8px 22px rgba(255,106,90,.32)}
+.btn-primary:hover{background:var(--coral-deep);transform:translateY(-2px);box-shadow:0 14px 30px rgba(255,106,90,.4)}
+.btn-dark{background:var(--pine);color:#fff}
+.btn-dark:hover{background:var(--pine-deep);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--pine);border-color:var(--sage-line)}
+.btn-ghost:hover{background:var(--white);border-color:var(--pine);transform:translateY(-2px)}
+.btn-white{background:#fff;color:var(--pine)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+
+/* ============================ EMERGENCY BANNER ============================ */
+.emergency{
+  background:var(--pine-deep);color:#eaf5f1;font-size:.86rem;font-weight:500;
+  display:flex;align-items:center;justify-content:center;gap:14px;padding:9px 20px;text-align:center;
+}
+.emergency .pulse{width:8px;height:8px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 0 rgba(255,106,90,.7);animation:pulse 2s infinite}
+.emergency a{color:#fff;font-weight:700;border-bottom:1.5px solid var(--coral);padding-bottom:1px}
+.emergency .x{margin-left:6px;opacity:.5;cursor:pointer;font-size:1.1rem;line-height:1;background:none;border:none;color:#fff}
+.emergency .x:hover{opacity:1}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,106,90,.6)}70%{box-shadow:0 0 0 9px rgba(255,106,90,0)}100%{box-shadow:0 0 0 0 rgba(255,106,90,0)}}
+
+/* ============================ HEADER ============================ */
+.hdr{position:sticky;top:0;z-index:60;transition:background .3s,box-shadow .3s,padding .3s;background:rgba(243,247,244,.72);backdrop-filter:blur(14px);border-bottom:1px solid transparent}
+.hdr.scrolled{background:rgba(243,247,244,.9);box-shadow:0 4px 24px rgba(11,42,38,.06);border-bottom-color:var(--sage-line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Fraunces';font-weight:600;font-size:1.28rem;color:var(--pine)}
+.brand .mark{width:38px;height:38px;border-radius:11px;background:var(--pine);display:grid;place-items:center;flex:0 0 auto}
+.brand .mark svg{width:22px;height:22px}
+.brand small{display:block;font-family:'Inter';font-weight:500;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-top:-2px}
+.nav-links{display:flex;align-items:center;gap:30px;list-style:none}
+.nav-links a{font-weight:500;font-size:.95rem;color:var(--ink);position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--coral);transition:width .25s var(--ease)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.nav-phone{display:flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;color:var(--pine)}
+.nav-phone svg{width:17px;height:17px;color:var(--teal)}
+.burger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:8px}
+.burger span{width:24px;height:2px;background:var(--pine);border-radius:2px;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ============================ HERO ============================ */
+.hero{padding:64px 0 90px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,5vw,4.15rem);margin:18px 0 20px}
+.hero h1 em{font-style:italic;color:var(--coral);font-weight:500}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:520px;margin-bottom:30px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:32px}
+.hero-trust{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.stars{color:var(--gold);letter-spacing:2px;font-size:1.05rem}
+.hero-trust .t-text{font-size:.9rem;color:var(--muted)}
+.hero-trust .t-text strong{color:var(--ink)}
+.avatars{display:flex}
+.avatars span{width:36px;height:36px;border-radius:50%;border:2.5px solid var(--porcelain);margin-left:-11px;background-size:cover;background-position:center;box-shadow:var(--shadow-sm)}
+.avatars span:first-child{margin-left:0}
+
+/* hero visual */
+.hero-visual{position:relative}
+.hero-photo{
+  position:relative;border-radius:120px 120px 28px 28px;overflow:hidden;
+  aspect-ratio:4/4.4;box-shadow:var(--shadow-lg);
+  background:linear-gradient(160deg,var(--teal),var(--pine));
+}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);z-index:-1}
+.blob.b1{width:280px;height:280px;background:radial-gradient(circle,rgba(255,106,90,.25),transparent 68%);top:-40px;right:-50px}
+.blob.b2{width:340px;height:340px;background:radial-gradient(circle,rgba(28,107,98,.22),transparent 68%);bottom:-60px;left:-70px}
+.float-card{
+  position:absolute;background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-md);
+  padding:16px 18px;display:flex;align-items:center;gap:13px;animation:floaty 5s ease-in-out infinite;
+}
+.float-card .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;flex:0 0 auto}
+.float-card .ic svg{width:22px;height:22px}
+.float-card .lbl{font-size:.72rem;color:var(--muted);font-weight:500}
+.float-card .val{font-family:'Fraunces';font-weight:600;font-size:1.15rem;color:var(--pine);line-height:1.1}
+.fc-1{top:26px;left:-34px;animation-delay:0s}
+.fc-1 .ic{background:#eafaf4;color:var(--teal)}
+.fc-2{bottom:40px;right:-30px;animation-delay:1.6s}
+.fc-2 .ic{background:#fff0ee;color:var(--coral)}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+/* ============================ MARQUEE / BADGES ============================ */
+.badges{border-top:1px solid var(--sage-line);border-bottom:1px solid var(--sage-line);background:var(--porcelain-2)}
+.badges .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:26px;padding:26px 0}
+.badge{display:flex;align-items:center;gap:12px;font-weight:600;font-size:.95rem;color:var(--pine)}
+.badge svg{width:26px;height:26px;color:var(--teal);flex:0 0 auto}
+.badge small{display:block;font-weight:500;font-size:.76rem;color:var(--muted)}
+
+/* ============================ SECTION HEADS ============================ */
+.sec{padding:96px 0}
+.sec-head{max-width:660px;margin-bottom:52px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:16px 0 14px}
+.sec-head p{font-size:1.08rem;color:var(--muted)}
+
+/* ============================ SERVICES ============================ */
+.services{background:var(--white)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{
+  background:var(--porcelain);border:1px solid var(--sage-line);border-radius:var(--r-md);
+  padding:30px 26px;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s;position:relative;overflow:hidden;
+}
+.svc::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,var(--pine),var(--teal));opacity:0;transition:opacity .35s;z-index:0}
+.svc>*{position:relative;z-index:1;transition:color .3s}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:transparent}
+.svc:hover::after{opacity:1}
+.svc:hover h3,.svc:hover p,.svc:hover .svc-link{color:#fff}
+.svc:hover .svc-ic{background:rgba(255,255,255,.15);color:#fff}
+.svc-ic{width:54px;height:54px;border-radius:15px;background:var(--sage);color:var(--pine);display:grid;place-items:center;margin-bottom:18px;transition:.3s}
+.svc-ic svg{width:27px;height:27px}
+.svc h3{font-size:1.28rem;margin-bottom:9px}
+.svc p{font-size:.95rem;color:var(--muted);margin-bottom:16px}
+.svc-link{font-weight:600;font-size:.9rem;color:var(--teal);display:inline-flex;align-items:center;gap:6px}
+.svc-link svg{width:15px;height:15px;transition:transform .25s}
+.svc:hover .svc-link svg{transform:translateX(4px)}
+
+/* ============================ WHY / SPLIT ============================ */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why-visual{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:1/1;box-shadow:var(--shadow-md);background:linear-gradient(160deg,var(--sage),var(--porcelain-2))}
+.why-visual img{width:100%;height:100%;object-fit:cover}
+.why-stat{position:absolute;left:22px;bottom:22px;background:rgba(11,42,38,.86);backdrop-filter:blur(6px);color:#fff;border-radius:var(--r-md);padding:18px 22px}
+.why-stat .n{font-family:'Fraunces';font-size:2rem;font-weight:600;line-height:1}
+.why-stat .l{font-size:.82rem;opacity:.85;margin-top:2px}
+.feat-list{list-style:none;margin-top:28px;display:grid;gap:18px}
+.feat-list li{display:flex;gap:15px}
+.feat-list .fic{width:44px;height:44px;border-radius:12px;background:var(--sage);color:var(--pine);display:grid;place-items:center;flex:0 0 auto}
+.feat-list .fic svg{width:22px;height:22px}
+.feat-list h4{font-family:'Inter';font-weight:700;font-size:1.03rem;color:var(--ink);margin-bottom:3px}
+.feat-list p{font-size:.93rem;color:var(--muted)}
+
+/* ============================ BEFORE / AFTER ============================ */
+.gallery{background:var(--pine);color:#fff}
+.gallery .eyebrow{color:#8fd3c6}
+.gallery .eyebrow::before{background:var(--coral)}
+.gallery h2{color:#fff}
+.gallery .sec-head p{color:#b9cec8}
+.ba-wrap{max-width:760px;margin:0 auto;position:relative}
+.ba{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:16/10;box-shadow:var(--shadow-lg);user-select:none;background:#0b2a26}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .after{clip-path:inset(0 0 0 50%);}
+.ba .tag{position:absolute;bottom:16px;background:rgba(11,42,38,.72);backdrop-filter:blur(4px);color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:100px}
+.ba .tag.b{left:16px}.ba .tag.a{right:16px}
+.ba-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);cursor:ew-resize;box-shadow:0 0 14px rgba(0,0,0,.3)}
+.ba-handle .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:var(--shadow-md)}
+.ba-handle .knob svg{width:22px;height:22px;color:var(--pine)}
+.ba-range{position:absolute;inset:0;width:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba-note{text-align:center;color:#9dbdb5;font-size:.86rem;margin-top:18px}
+
+/* ============================ REVIEWS ============================ */
+.reviews{background:var(--white)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:var(--porcelain);border:1px solid var(--sage-line);border-radius:var(--r-md);padding:28px 26px;display:flex;flex-direction:column}
+.rev .stars{font-size:1rem;margin-bottom:13px}
+.rev p{font-size:1rem;color:var(--ink);flex:1;margin-bottom:20px}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev .who .pic{width:44px;height:44px;border-radius:50%;background-size:cover;background-position:center;flex:0 0 auto;background-color:var(--sage)}
+.rev .who .nm{font-weight:700;font-size:.95rem}
+.rev .who .mt{font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:5px}
+.g-badge{display:inline-flex;align-items:center;gap:9px;background:var(--porcelain-2);border:1px solid var(--sage-line);border-radius:100px;padding:10px 20px;font-weight:600;font-size:.92rem;margin:0 auto 40px;width:fit-content}
+.g-badge .g{font-weight:700}.g-badge .g b:nth-child(1){color:#4285F4}.g-badge .g b:nth-child(2){color:#EA4335}.g-badge .g b:nth-child(3){color:#FBBC05}.g-badge .g b:nth-child(4){color:#4285F4}.g-badge .g b:nth-child(5){color:#34A853}.g-badge .g b:nth-child(6){color:#EA4335}
+.g-badge .stars{color:var(--gold)}
+
+/* ============================ FINANCING / INSURANCE ============================ */
+.money{background:var(--porcelain-2)}
+.money-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.money-card{background:#fff;border-radius:var(--r-lg);padding:40px;box-shadow:var(--shadow-sm);border:1px solid var(--sage-line)}
+.money-card h3{font-size:1.6rem;margin:14px 0 12px}
+.money-card p{color:var(--muted);margin-bottom:22px}
+.money-ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center}
+.money-card:nth-child(1) .money-ic{background:#eafaf4;color:var(--teal)}
+.money-card:nth-child(2) .money-ic{background:#fff0ee;color:var(--coral)}
+.money-ic svg{width:26px;height:26px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{background:var(--porcelain);border:1px solid var(--sage-line);border-radius:100px;padding:8px 15px;font-size:.85rem;font-weight:500;color:var(--pine)}
+
+/* ============================ OFFER STRIP ============================ */
+.offer{background:linear-gradient(120deg,var(--pine),var(--teal));color:#fff;border-radius:var(--r-xl);padding:52px;display:grid;grid-template-columns:1.3fr auto;gap:32px;align-items:center;overflow:hidden;position:relative}
+.offer::before{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:rgba(255,106,90,.18);top:-120px;right:-60px}
+.offer h2{color:#fff;font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:10px}
+.offer p{color:#cfe3dd;max-width:460px}
+.offer .price{font-family:'Fraunces';font-size:3rem;font-weight:600;color:var(--coral);line-height:1}
+.offer .price small{display:block;font-family:'Inter';font-size:.85rem;color:#cfe3dd;font-weight:500;margin-top:6px}
+.offer-cta{position:relative;z-index:1;text-align:center}
+
+/* ============================ FAQ ============================ */
+.faq{background:var(--white)}
+.faq-wrap{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--sage-line)}
+.faq-q{width:100%;background:none;border:none;cursor:pointer;text-align:left;padding:24px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:'Fraunces';font-weight:600;font-size:1.2rem;color:var(--pine)}
+.faq-q .pm{width:30px;height:30px;border-radius:50%;background:var(--sage);color:var(--pine);display:grid;place-items:center;flex:0 0 auto;transition:.3s;font-size:1.2rem;line-height:1}
+.faq-item.active .pm{background:var(--coral);color:#fff;transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s var(--ease)}
+.faq-a p{padding:0 0 24px;color:var(--muted);max-width:660px}
+
+/* ============================ BOOK / CONTACT ============================ */
+.book{background:var(--porcelain-2)}
+.book-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:start}
+.book-info h2{font-size:clamp(2rem,3.4vw,2.7rem);margin:16px 0 16px}
+.book-info>p{color:var(--muted);font-size:1.05rem;margin-bottom:30px;max-width:440px}
+.contact-line{display:flex;gap:15px;margin-bottom:20px;align-items:flex-start}
+.contact-line .ic{width:48px;height:48px;border-radius:13px;background:#fff;border:1px solid var(--sage-line);color:var(--teal);display:grid;place-items:center;flex:0 0 auto;box-shadow:var(--shadow-sm)}
+.contact-line .ic svg{width:22px;height:22px}
+.contact-line .lbl{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600}
+.contact-line .val{font-weight:600;color:var(--pine);font-size:1.05rem}
+.contact-line .val a:hover{color:var(--coral)}
+.hours{margin-top:26px;background:#fff;border:1px solid var(--sage-line);border-radius:var(--r-md);padding:22px 24px}
+.hours h4{font-family:'Inter';font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:14px}
+.hours-row{display:flex;justify-content:space-between;padding:5px 0;font-size:.95rem}
+.hours-row span:first-child{color:var(--muted)}
+.hours-row span:last-child{font-weight:600;color:var(--pine)}
+.hours-row.today{color:var(--teal)}
+.hours-row.today span{color:var(--teal)}
+
+/* form */
+.form-card{background:#fff;border-radius:var(--r-lg);padding:38px;box-shadow:var(--shadow-md);border:1px solid var(--sage-line)}
+.form-card h3{font-size:1.5rem;margin-bottom:6px}
+.form-card .sub{color:var(--muted);font-size:.95rem;margin-bottom:26px}
+.field{margin-bottom:18px}
+.field label{display:block;font-weight:600;font-size:.85rem;color:var(--pine);margin-bottom:7px}
+.field input,.field select,.field textarea{
+  width:100%;padding:14px 16px;border:1.5px solid var(--sage-line);border-radius:var(--r-sm);
+  font-family:'Inter';font-size:.98rem;color:var(--ink);background:var(--porcelain);transition:.2s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal);background:#fff;box-shadow:0 0 0 4px rgba(28,107,98,.1)}
+.field textarea{resize:vertical;min-height:90px}
+.field.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field.row2>div{margin:0}
+.form-card .btn{width:100%;margin-top:6px}
+.form-note{font-size:.8rem;color:var(--muted);text-align:center;margin-top:14px}
+.form-success{display:none;text-align:center;padding:30px 10px}
+.form-success.show{display:block;animation:fadeup .5s var(--ease)}
+.form-success .check{width:64px;height:64px;border-radius:50%;background:#eafaf4;color:var(--teal);display:grid;place-items:center;margin:0 auto 18px}
+.form-success .check svg{width:34px;height:34px}
+.form-success h3{margin-bottom:8px}
+.form-success p{color:var(--muted)}
+.err{border-color:var(--coral)!important}
+@keyframes fadeup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ============================ FOOTER ============================ */
+.ftr{background:var(--pine-deep);color:#c5d8d2;padding:64px 0 30px}
+.ftr-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.1)}
+.ftr .brand{color:#fff;margin-bottom:16px}
+.ftr .brand .mark{background:var(--teal)}
+.ftr-about{font-size:.92rem;max-width:280px;margin-bottom:20px}
+.ftr h5{color:#fff;font-family:'Inter';font-weight:700;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+.ftr ul{list-style:none;display:grid;gap:11px}
+.ftr ul a{font-size:.92rem;color:#c5d8d2;transition:color .2s}
+.ftr ul a:hover{color:var(--coral)}
+.socials{display:flex;gap:10px}
+.socials a{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.08);display:grid;place-items:center;transition:.25s}
+.socials a:hover{background:var(--coral);transform:translateY(-3px)}
+.socials svg{width:19px;height:19px;color:#fff}
+.ftr-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:26px;font-size:.85rem}
+.ftr-bot a:hover{color:#fff}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============================ RESPONSIVE ============================ */
+@media(max-width:960px){
+  .hero-grid,.why-grid,.book-grid{grid-template-columns:1fr;gap:44px}
+  .hero-visual{max-width:440px;margin:0 auto;width:100%}
+  .svc-grid,.rev-grid{grid-template-columns:1fr 1fr}
+  .money-grid{grid-template-columns:1fr}
+  .offer{grid-template-columns:1fr;text-align:center;padding:40px 28px}
+  .offer p{margin:0 auto}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  .nav-links,.nav-phone{display:none}
+  .burger{display:flex}
+  .nav-links.open{
+    display:flex;flex-direction:column;position:absolute;top:74px;left:0;right:0;
+    background:var(--porcelain);padding:24px;gap:20px;box-shadow:var(--shadow-md);border-bottom:1px solid var(--sage-line);
+  }
+  .sec{padding:70px 0}
+  .svc-grid,.rev-grid{grid-template-columns:1fr}
+  .ftr-grid{grid-template-columns:1fr;gap:30px}
+  .field.row2{grid-template-columns:1fr}
+  .hero-photo{border-radius:80px 80px 24px 24px}
+  .fc-1{left:0}.fc-2{right:0}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== EMERGENCY BANNER ===================== -->
+<div class="emergency" id="emergency">
+  <span class="pulse"></span>
+  <span>Dental emergency? We keep same-day slots open —</span>
+  <a href="tel:+18135550142">call (813) 555-0142</a>
+  <button class="x" id="closeEmergency" aria-label="Dismiss">&times;</button>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="hdr" id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Modern Smile Dental home">
+      <span class="mark"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4c-3 0-4-1.5-7-1.5C5 2.5 2.5 5 2.5 9.5c0 4.5 1.8 7.2 3.2 12C7 28 7 31 9.3 31c2 0 1.8-3.8 3.2-6.6.7-1.4 2-1.4 2.9 0 1.4 2.8 1.2 6.6 3.2 6.6 2.3 0 2.3-3.7 3.6-9.5 1.4-4.8 3.2-7.5 3.2-12C27.9 5 25.4 2.5 21.6 2.5 18 2.5 19 4 16 4Z" fill="#fff"/></svg></span>
+      <span>Modern Smile<small>Dental · Tampa</small></span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why us</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#financing">Financing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+18135550142" class="nav-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>(813) 555-0142</a>
+      <a href="#book" class="btn btn-primary">Book Appointment</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Family &amp; Cosmetic Dentistry</span>
+      <h1>A dentist your whole family will actually <em>look forward to</em>.</h1>
+      <p class="lead">Gentle, judgment-free care in the heart of Tampa. From routine cleanings to full smile makeovers — with same-day emergencies and financing that fits your budget.</p>
+      <div class="hero-cta">
+        <a href="#book" class="btn btn-primary">Request an Appointment</a>
+        <a href="#results" class="btn btn-ghost">See real results</a>
+      </div>
+      <div class="hero-trust">
+        <div class="avatars">
+          <span style="background-image:url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&amp;q=80')"></span>
+          <span style="background-image:url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&amp;q=80')"></span>
+          <span style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&amp;q=80')"></span>
+          <span style="background-image:url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&amp;q=80')"></span>
+        </div>
+        <div class="t-text"><span class="stars">★★★★★</span><br><strong>4.9/5</strong> from 487+ Tampa patients</div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <span class="blob b1"></span><span class="blob b2"></span>
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&amp;q=80" alt="Smiling patient at Modern Smile Dental" loading="eager" onerror="this.style.display='none'">
+      </div>
+      <div class="float-card fc-1">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></span>
+        <div><div class="lbl">Same-day</div><div class="val">Emergencies</div></div>
+      </div>
+      <div class="float-card fc-2">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+        <div><div class="lbl">Gentle care</div><div class="val">Anxiety-free</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST BADGES ===================== -->
+<section class="badges">
+  <div class="wrap row">
+    <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div>Most insurance accepted<small>PPO &amp; in-network plans</small></div></div>
+    <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><div>0% financing<small>CareCredit &amp; in-house plans</small></div></div>
+    <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div>Open 6 days<small>Early &amp; evening slots</small></div></div>
+    <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><div>New patients welcome<small>$79 exam + X-rays</small></div></div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="sec services" id="services">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" style="justify-content:center">What we do</span>
+      <h2>Complete care, all under one roof</h2>
+      <p>Preventive, cosmetic, restorative, and emergency dentistry — so your family never has to be referred out.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C9 2 8 1 6 1 3 1 1.5 3 1.5 6.5c0 3.5 1.5 5.5 2.5 9C5 19 5 22 7 22c1.7 0 1.5-3 2.5-5 .6-1.2 2-1.2 3 0 1 2 .8 5 2.5 5 2 0 2-3 3-6.5 1-3.5 2.5-5.5 2.5-9C22.5 3 21 1 18 1c-2 0-3 1-6 1z"/></svg></div>
+        <h3>General &amp; Preventive</h3>
+        <p>Cleanings, exams, digital X-rays, fillings, and sealants to keep problems small.</p>
+        <a href="#book" class="svc-link">Book a cleaning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6 4.3 2.3 7.3-6-4.5-6 4.5L8.6 13.7 2.6 9.4h7z"/></svg></div>
+        <h3>Cosmetic &amp; Whitening</h3>
+        <p>Veneers, bonding, and professional whitening for a brighter, natural-looking smile.</p>
+        <a href="#book" class="svc-link">Brighten my smile <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M7 7c0-3 10-3 10 0M6 12h12M8 17h8"/></svg></div>
+        <h3>Dental Implants</h3>
+        <p>Permanent, natural-looking replacements for missing teeth — restore your bite for good.</p>
+        <a href="#book" class="svc-link">Explore implants <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg></div>
+        <h3>Invisalign &amp; Ortho</h3>
+        <p>Straighten teeth discreetly with clear aligners — no metal, fewer visits.</p>
+        <a href="#book" class="svc-link">Straighten up <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div>
+        <h3>Emergency Care</h3>
+        <p>Toothaches, chips, and lost fillings seen the same day. Don't wait it out in pain.</p>
+        <a href="tel:+18135550142" class="svc-link">Call now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+        <h3>Kids &amp; Family</h3>
+        <p>Patient, kid-friendly visits that build healthy habits — from first tooth onward.</p>
+        <a href="#book" class="svc-link">Family visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY US ===================== -->
+<section class="sec" id="why">
+  <div class="wrap why-grid">
+    <div class="why-visual reveal">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&amp;q=80" alt="Modern Smile Dental office" onerror="this.parentElement.style.background='linear-gradient(160deg,var(--teal),var(--pine))';this.style.display='none'">
+      <div class="why-stat"><div class="n">15+ yrs</div><div class="l">Serving Tampa families</div></div>
+    </div>
+    <div class="why-copy reveal">
+      <span class="eyebrow">Why patients stay</span>
+      <h2 style="font-size:clamp(2rem,3.4vw,2.7rem);margin:16px 0 14px">Dentistry that respects your time, budget, and comfort</h2>
+      <p class="muted">We built the practice we'd want for our own families — honest treatment plans, no upselling, and a team that actually remembers your name.</p>
+      <ul class="feat-list">
+        <li><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></span><div><h4>Anxiety-friendly, always</h4><p>Sedation options, warm blankets, and a no-judgment team for nervous patients.</p></div></li>
+        <li><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><div><h4>On-time appointments</h4><p>We run a tight schedule so you're not stuck in the waiting room for an hour.</p></div></li>
+        <li><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><div><h4>Transparent pricing</h4><p>Clear estimates before we start — plus financing so care fits your budget.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BEFORE / AFTER ===================== -->
+<section class="sec gallery" id="results">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" style="justify-content:center">Real transformations</span>
+      <h2>Drag to see the difference</h2>
+      <p>Every smile here belongs to an actual Modern Smile patient. Slide the handle to compare before and after.</p>
+    </div>
+    <div class="ba-wrap reveal">
+      <div class="ba" id="ba">
+        <img class="before" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=900&amp;q=80" alt="Before treatment" onerror="this.style.background='#1a4a44'">
+        <img class="after" id="baAfter" src="https://images.unsplash.com/photo-1616391182219-e080b4d1043a?w=900&amp;q=80" alt="After treatment" onerror="this.style.background='#2b8378'">
+        <span class="tag b">Before</span>
+        <span class="tag a">After</span>
+        <div class="ba-handle" id="baHandle"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div></div>
+        <input type="range" class="ba-range" id="baRange" min="0" max="100" value="50" aria-label="Compare before and after">
+      </div>
+      <p class="ba-note">Veneers &amp; whitening · completed in 2 visits · results vary by patient</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REVIEWS ===================== -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" style="justify-content:center">Loved by locals</span>
+      <h2>Tampa's most-reviewed smile team</h2>
+    </div>
+    <div class="g-badge reveal"><span class="g"><b>G</b><b>o</b><b>o</b><b>g</b><b>l</b><b>e</b></span> <span class="stars">★★★★★</span> <span>4.9 · 487 reviews</span></div>
+    <div class="rev-grid">
+      <article class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>"I've avoided dentists for years out of fear. The team here was so patient and gentle I actually booked my next cleaning before I left. Life-changing."</p>
+        <div class="who"><span class="pic" style="background-image:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=90&amp;q=80')"></span><div><div class="nm">Marisa T.</div><div class="mt">Verified patient · Google</div></div></div>
+      </article>
+      <article class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>"My son had an emergency on a Saturday and they got us in within an hour. Fair price, no drama, and he wasn't even scared. Highly recommend."</p>
+        <div class="who"><span class="pic" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=90&amp;q=80')"></span><div><div class="nm">David R.</div><div class="mt">Verified patient · Google</div></div></div>
+      </article>
+      <article class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Got Invisalign here and the whole process was smooth and clearly explained. The financing made it doable. My smile has never looked better."</p>
+        <div class="who"><span class="pic" style="background-image:url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=90&amp;q=80')"></span><div><div class="nm">Priya K.</div><div class="mt">Verified patient · Google</div></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINANCING / INSURANCE ===================== -->
+<section class="sec money" id="financing">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" style="justify-content:center">Care within reach</span>
+      <h2>Insurance &amp; financing made simple</h2>
+      <p>Good dental care shouldn't be a luxury. We work with your plan and offer options if you don't have one.</p>
+    </div>
+    <div class="money-grid">
+      <div class="money-card reveal">
+        <div class="money-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Insurance we accept</h3>
+        <p>We're in-network with most major PPO plans and file your claims for you — no paperwork headaches.</p>
+        <div class="chips"><span class="chip">Delta Dental</span><span class="chip">Cigna</span><span class="chip">MetLife</span><span class="chip">Aetna</span><span class="chip">Guardian</span><span class="chip">United Concordia</span><span class="chip">+ more</span></div>
+      </div>
+      <div class="money-card reveal">
+        <div class="money-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
+        <h3>No insurance? No problem</h3>
+        <p>Flexible monthly payments and our in-house membership plan keep quality care affordable.</p>
+        <div class="chips"><span class="chip">0% CareCredit</span><span class="chip">In-house plan from $29/mo</span><span class="chip">$79 new-patient exam</span><span class="chip">Free implant consult</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OFFER ===================== -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="offer reveal">
+      <div>
+        <span class="eyebrow" style="color:#8fd3c6">New patient special</span>
+        <h2>Exam, X-rays &amp; cleaning consult</h2>
+        <p>Not sure where to start? This is the easiest first step. No insurance required, no pressure — just a clear picture of your smile.</p>
+      </div>
+      <div class="offer-cta">
+        <div class="price">$79<small>reg. $289 · save 72%</small></div>
+        <a href="#book" class="btn btn-white" style="margin-top:18px">Claim this offer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="sec faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" style="justify-content:center">Good to know</span>
+      <h2>Questions, answered</h2>
+    </div>
+    <div class="faq-wrap reveal">
+      <div class="faq-item">
+        <button class="faq-q">Do you take my insurance?<span class="pm">+</span></button>
+        <div class="faq-a"><p>We accept most major PPO dental plans and are in-network with many, including Delta Dental, Cigna, MetLife, Aetna, and Guardian. Not sure about yours? Call us with your plan info and we'll verify your coverage before your visit — free.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">I'm nervous about the dentist. Can you help?<span class="pm">+</span></button>
+        <div class="faq-a"><p>Absolutely — a large share of our patients came to us anxious. We offer sedation options, take things at your pace, explain everything before we do it, and never judge. Just let us know when you book and we'll plan around your comfort.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I be seen the same day for an emergency?<span class="pm">+</span></button>
+        <div class="faq-a"><p>Yes. We hold same-day slots for dental emergencies like severe pain, swelling, chipped teeth, or lost fillings. Call (813) 555-0142 as early as you can and we'll get you in fast.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What if I don't have insurance?<span class="pm">+</span></button>
+        <div class="faq-a"><p>You're welcome here. We offer a new-patient exam with X-rays for $79, an in-house membership plan starting at $29/month, and 0% CareCredit financing for larger treatments so you can pay over time.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How do I become a new patient?<span class="pm">+</span></button>
+        <div class="faq-a"><p>Just request an appointment using the form below or give us a call. We'll send your new-patient forms ahead of time so your first visit is quick and easy.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BOOK / CONTACT ===================== -->
+<section class="sec book" id="book">
+  <div class="wrap book-grid">
+    <div class="book-info reveal">
+      <span class="eyebrow">Book your visit</span>
+      <h2>Ready when you are</h2>
+      <p>Request an appointment and our front desk will confirm your time within one business day. For emergencies, please call us directly.</p>
+
+      <div class="contact-line">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+        <div><div class="lbl">Call us</div><div class="val"><a href="tel:+18135550142">(813) 555-0142</a></div></div>
+      </div>
+      <div class="contact-line">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <div><div class="lbl">Visit us</div><div class="val">4210 W Kennedy Blvd, Suite 120<br>Tampa, FL 33609</div></div>
+      </div>
+      <div class="contact-line">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg></span>
+        <div><div class="lbl">Email</div><div class="val"><a href="mailto:hello@modernsmiledental.example.com">hello@modernsmiledental.com</a></div></div>
+      </div>
+
+      <div class="hours">
+        <h4>Office hours</h4>
+        <div class="hours-row" data-day="1"><span>Monday – Thursday</span><span>8:00 AM – 6:00 PM</span></div>
+        <div class="hours-row" data-day="5"><span>Friday</span><span>8:00 AM – 2:00 PM</span></div>
+        <div class="hours-row" data-day="6"><span>Saturday</span><span>By appointment</span></div>
+        <div class="hours-row" data-day="0"><span>Sunday</span><span>Closed</span></div>
+      </div>
+    </div>
+
+    <div class="form-card reveal">
+      <form id="apptForm" name="appointment" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="appointment" />
+        <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <h3>Request an appointment</h3>
+        <p class="sub">Takes 30 seconds. We'll confirm within one business day.</p>
+        <div class="field row2">
+          <div><label for="fn">First name</label><input id="fn" name="first_name" type="text" placeholder="Jordan" required></div>
+          <div><label for="ln">Last name</label><input id="ln" name="last_name" type="text" placeholder="Rivera" required></div>
+        </div>
+        <div class="field row2">
+          <div><label for="ph">Phone</label><input id="ph" name="phone" type="tel" placeholder="(813) 555-0100" required></div>
+          <div><label for="em">Email</label><input id="em" name="email" type="email" placeholder="you@email.com" required></div>
+        </div>
+        <div class="field">
+          <label for="svc">What do you need?</label>
+          <select id="svc" name="service">
+            <option>New patient exam &amp; cleaning</option>
+            <option>Emergency / tooth pain</option>
+            <option>Cosmetic / whitening</option>
+            <option>Invisalign consultation</option>
+            <option>Dental implants</option>
+            <option>Other / not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="msg">Anything we should know? <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+          <textarea id="msg" name="message" placeholder="Preferred days/times, concerns, etc."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Request appointment</button>
+        <p class="form-note">🔒 Your info stays private. This isn't a confirmed booking until our team reaches out.</p>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Request received!</h3>
+        <p>Thanks — our front desk will call to confirm your appointment within one business day. Need care sooner? Call <a href="tel:+18135550142" style="color:var(--teal);font-weight:600">(813) 555-0142</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <div class="brand"><span class="mark"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4c-3 0-4-1.5-7-1.5C5 2.5 2.5 5 2.5 9.5c0 4.5 1.8 7.2 3.2 12C7 28 7 31 9.3 31c2 0 1.8-3.8 3.2-6.6.7-1.4 2-1.4 2.9 0 1.4 2.8 1.2 6.6 3.2 6.6 2.3 0 2.3-3.7 3.6-9.5 1.4-4.8 3.2-7.5 3.2-12C27.9 5 25.4 2.5 21.6 2.5 18 2.5 19 4 16 4Z" fill="#fff"/></svg></span><span style="color:#fff">Modern Smile Dental</span></div>
+        <p class="ftr-about">Family &amp; cosmetic dentistry in Tampa, FL. Gentle care, honest pricing, and same-day emergencies for every member of your family.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Google"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.35 11.1H12v2.9h5.35c-.25 1.5-1.7 4.4-5.35 4.4a5.4 5.4 0 1 1 0-10.8c1.7 0 2.85.72 3.5 1.35l2.4-2.3A9 9 0 1 0 12 21c5.2 0 8.6-3.65 8.6-8.8 0-.6-.07-1.05-.15-1.5z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">General dentistry</a></li>
+          <li><a href="#services">Cosmetic &amp; whitening</a></li>
+          <li><a href="#services">Dental implants</a></li>
+          <li><a href="#services">Invisalign</a></li>
+          <li><a href="#services">Emergency care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Practice</h5>
+        <ul>
+          <li><a href="#why">Why choose us</a></li>
+          <li><a href="#results">Before &amp; after</a></li>
+          <li><a href="#reviews">Patient reviews</a></li>
+          <li><a href="#financing">Financing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul>
+          <li><a href="tel:+18135550142">(813) 555-0142</a></li>
+          <li><a href="mailto:hello@modernsmiledental.example.com">hello@modernsmiledental.com</a></li>
+          <li><a href="#book">Book appointment</a></li>
+          <li>4210 W Kennedy Blvd #120</li>
+          <li>Tampa, FL 33609</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bot">
+      <span>© <span id="yr"></span> Modern Smile Dental. All rights reserved.</span>
+      <span style="opacity:.6">Site by Cyber Tech Services · <a href="#top">Privacy</a> · <a href="#top">Accessibility</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* year */
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* sticky header */
+  var hdr = document.getElementById('hdr');
+  var onScroll = function(){ hdr.classList.toggle('scrolled', window.scrollY > 12); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* emergency banner dismiss */
+  document.getElementById('closeEmergency').addEventListener('click', function(){
+    document.getElementById('emergency').style.display = 'none';
+  });
+
+  /* mobile menu */
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ burger.classList.remove('open'); navLinks.classList.remove('open'); });
+  });
+
+  /* highlight today's hours */
+  var today = new Date().getDay();
+  document.querySelectorAll('.hours-row').forEach(function(row){
+    var d = row.getAttribute('data-day');
+    if(d !== null){
+      var days = d.split(',').map(Number);
+      // treat Mon-Thu as 1..4 for the combined row
+      if((row.querySelector('span').textContent.indexOf('Monday') === 0 && today >=1 && today <=4) || days.indexOf(today) !== -1){
+        if(!(row.querySelector('span').textContent.indexOf('Monday') === 0) || (today>=1&&today<=4)){
+          row.classList.add('today');
+        }
+      }
+    }
+  });
+
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click', function(){
+      var item = q.parentElement;
+      var ans = item.querySelector('.faq-a');
+      var open = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(function(i){
+        i.classList.remove('active');
+        i.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!open){ item.classList.add('active'); ans.style.maxHeight = ans.scrollHeight + 'px'; }
+    });
+  });
+
+  /* before / after slider */
+  var range = document.getElementById('baRange');
+  var after = document.getElementById('baAfter');
+  var handle = document.getElementById('baHandle');
+  function setBA(v){
+    after.style.clipPath = 'inset(0 0 0 ' + v + '%)';
+    handle.style.left = v + '%';
+  }
+  if(range){ range.addEventListener('input', function(){ setBA(this.value); }); setBA(50); }
+
+  /* scroll reveal */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* appointment form */
+  var form = document.getElementById('apptForm');
+  var success = document.getElementById('formSuccess');
+  form.addEventListener('submit', function(e){
+    var ok = true;
+    form.querySelectorAll('[required]').forEach(function(f){
+      if(!f.value.trim()){ f.classList.add('err'); ok = false; } else { f.classList.remove('err'); }
+    });
+    var email = document.getElementById('em');
+    if(email.value && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value)){ email.classList.add('err'); ok = false; }
+    if(!ok){ e.preventDefault(); return; }
+
+    // On Netlify the native POST captures the submission. We show the success
+    // state immediately for a smooth UX; comment the next 3 lines out if you
+    // prefer Netlify's default redirect page.
+    e.preventDefault();
+    form.style.display = 'none';
+    success.classList.add('show');
+    success.scrollIntoView({behavior:'smooth', block:'center'});
+
+    // Fire the real submission to Netlify in the background
+    try{
+      fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body: new URLSearchParams(new FormData(form)).toString()});
+    }catch(err){/* local preview: ignore */}
+  });
+
+  /* clear error on input */
+  form.querySelectorAll('input,select,textarea').forEach(function(f){
+    f.addEventListener('input', function(){ f.classList.remove('err'); });
+  });
+})();
+</script>
+</body>
+</html>
